@@ -32,7 +32,7 @@ function showNewUserOnScreen(obj){
     document.getElementById('desc').value ='';
     document.getElementById('category').value = '';
 
-    if(localStorage.getItem(obj.desc)){
+    if(localStorage.getItem(obj.desc) !== null){
         removeUserFromScreen(obj.desc)
     }
 const parentNode =document.getElementById('list-group');
